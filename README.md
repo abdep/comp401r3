@@ -37,6 +37,10 @@ Users could make reasonable coins:
     	public Coin(Name name) {
         	this.name = name;
     	}
+    	
+    	public int getValue() {
+    		return name.getValue();
+    	}
     
 	}Then we can get a predifined value like this
 	new Coin(Name.DIME).getValue()OK, let's start to fill in the practice program.
