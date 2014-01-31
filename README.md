@@ -39,4 +39,4 @@ Users could make reasonable coins:
     	}
     
 	}Then we can get a predifined value like this
-	new Coin(Name.DIME).name.getValue()OK, let's start to fill in the practice program.
+	new Coin(Name.DIME).getValue()OK, let's start to fill in the practice program.
