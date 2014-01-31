@@ -13,4 +13,4 @@ Users could make reasonable coins:
 ## enums
 An enum (short for “enumeration”) is a special kind of class that contains a finite number of variables that are
 * static* public* finalby default.Let’s see how this is useful:	public class Coin {		Name name; // We’ll define the “Name” type as an enum below		int value;		// We could put this in its own file if we wanted		public enum Name {			PENNY,			NICKEL,			DIME,			QUARTER;		}		public Coin(Name name, int value) {			this.name = name;			this.value = value;		}	}Now, we can say things like	new Coin(Name.QUARTER, 25)What if we want to restrict the values as well? We can do this easily in enums also:
-	public enum Name {		PENNY(1),		NICKEL(5),		DIME(10),		QUARTER(25);		private int value; // move value inside the enum		// Enums use private constructor		private Name(int value) {			this.value = value;		}	}
+	public enum Name {		PENNY(1),		NICKEL(5),		DIME(10),		QUARTER(25);		private int value; // move value inside the enum		// Enums use private constructor		private Name(int value) {			this.value = value;		}	}OK, let's start to fill in the practice program.
