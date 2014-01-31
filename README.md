@@ -39,5 +39,5 @@ Users could make reasonable coins:
         	this.name = name;
     	}
     
-	}Then we can print the predifined value like this
+	}Then we can get a predifined value like this
 	new Coin(Name.DIME).name.getValue()OK, let's start to fill in the practice program.
