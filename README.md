@@ -15,7 +15,6 @@ Users could make reasonable coins:
 * static* public* finalby default.Let’s see how this is useful:	public class Coin {		Name name; // We’ll define the “Name” type as an enum below		int value;		// We could put this in its own file if we wanted		public enum Name {			PENNY,			NICKEL,			DIME,			QUARTER;		}		public Coin(Name name, int value) {			this.name = name;			this.value = value;		}	}Now, we can say things like	new Coin(Name.QUARTER, 25)What if we want to restrict the values as well? We can do this easily in enums also:
 	public class Coin {
     	Name name; // We’ll define the Name type as an enum below
-	    int value;
     
     	public enum Name {
         	PENNY(1),
